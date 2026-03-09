@@ -1,0 +1,158 @@
+{
+  "projectType": "api-service",
+  "projectName": "DaliLM Backend",
+  "projectDescription": "FastAPI backend service for lead management, commissions, and CRM operations with Azure integrations.",
+  "theme": "aspen",
+  "primaryColor": "#1E40AF",
+  "lightColor": "#3B82F6",
+  "darkColor": "#1E3A8A",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "authentication"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment",
+              "configuration/database",
+              "configuration/azure"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/azure"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core Resources",
+            "pages": [
+              "api/overview",
+              "api/sessions"
+            ]
+          },
+          {
+            "group": "Leads",
+            "pages": [
+              "api/leads/overview",
+              "api/leads/create",
+              "api/leads/list",
+              "api/leads/update",
+              "api/leads/assign",
+              "api/leads/bulk-operations"
+            ]
+          },
+          {
+            "group": "Lead Assignments",
+            "pages": [
+              "api/lead-assignments/overview",
+              "api/lead-assignments/reassignment",
+              "api/lead-assignments/history"
+            ]
+          },
+          {
+            "group": "Interactions",
+            "pages": [
+              "api/interactions/overview",
+              "api/interactions/create",
+              "api/interactions/query"
+            ]
+          },
+          {
+            "group": "Commissions",
+            "pages": [
+              "api/commissions/overview",
+              "api/commissions/plans",
+              "api/commissions/rules",
+              "api/commissions/catalogs"
+            ]
+          },
+          {
+            "group": "Corporate",
+            "pages": [
+              "api/corporate/leads",
+              "api/corporate/interactions"
+            ]
+          },
+          {
+            "group": "Communications",
+            "pages": [
+              "api/communications/emails",
+              "api/communications/whatsapp"
+            ]
+          },
+          {
+            "group": "Users & Profiles",
+            "pages": [
+              "api/users/overview",
+              "api/users/profiles",
+              "api/users/clients"
+            ]
+          },
+          {
+            "group": "Reporting",
+            "pages": [
+              "api/reporting/powerbi",
+              "api/reporting/reports"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Third-Party Services",
+            "pages": [
+              "integrations/microsoft-graph",
+              "integrations/power-bi",
+              "integrations/whatsapp",
+              "integrations/azure-storage"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Lead and opportunity management",
+    "Commission plan administration with approval workflows",
+    "Multi-channel communications (Email, WhatsApp)",
+    "Azure AD authentication and Graph API integration",
+    "Power BI embedded reporting",
+    "Corporate and retail lead tracking",
+    "Interaction history and client profiling"
+  ],
+  "publicApiSurface": [
+    "POST /api/leads - Create new lead",
+    "GET /api/leads - List leads",
+    "PUT /api/leads/{id} - Update lead",
+    "POST /api/leads/assign - Assign lead to user",
+    "POST /api/interactions - Create interaction",
+    "GET /api/commissions/plans - List commission plans",
+    "POST /api/commissions/plans - Create commission plan",
+    "POST /api/commissions/plans/{id}/approve - Approve commission plan",
+    "POST /api/emails/send - Send email",
+    "GET /api/emails - Get emails",
+    "POST /api/whatsapp/send - Send WhatsApp message",
+    "GET /api/profile - Get user profile",
+    "GET /api/reports/powerbi/embed - Get Power BI embed token",
+    "POST /api/sessions - Create session",
+    "GET /api/users - List users"
+  ]
+}
